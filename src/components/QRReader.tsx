@@ -39,7 +39,21 @@ const QRReader: React.FC = () => {
 
   return (
     <div>
-      <h2>QRコードリーダー</h2>
+      <div
+        style={{
+          border: '2px solid orange',
+          borderRadius: '8px',
+          backgroundColor: '#fff8e1',
+          padding: '16px',
+          marginBottom: '16px',
+          textAlign: 'center',
+        }}
+      >
+        <h2 style={{ color: 'orange', fontWeight: 'bold', margin: 0 }}>
+          このアプリはブラウザ上で動かしているだけなので、<br />
+          読み取った情報はどこにも送信しておりません。
+        </h2>
+      </div>
       <input type="file" accept="image/*" ref={fileInputRef} onChange={handleFileChange} />
 
       <p>読み取り結果:</p>
