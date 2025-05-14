@@ -85,7 +85,8 @@ const QRReader: React.FC = () => {
       >
         <h2 style={{ color: isDarkMode ? '#ffa500' : 'orange', fontWeight: 'bold', margin: 0 }}>
           このアプリはブラウザ上で動かしているだけなので、<br />
-          読み取った情報はどこにも送信しておりません。
+          読み取った情報はどこにも送信しておりません。<br />
+          <a href="https://github.com/daipresents/qr-reader-app" target="_blank">ソースコード</a>
         </h2>
       </div>
 
